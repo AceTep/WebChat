@@ -1,0 +1,391 @@
+/*layout*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#f2f6fa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.empty{
+    padding-top: 100px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column; 
+    height: 79.5vh;
+    padding-top: 10px;
+}
+
+.nav{
+    flex-basis: 30%;
+}
+
+.section{
+    flex-basis: 60%;
+}
+
+.aside{
+    flex-basis: 10%;
+}
+
+
+@media (min-width: 700px){
+	.main{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    
+    .nav{
+        flex-basis: 30%;
+        width: 25%;
+        order: 1;
+    }
+	
+	.section{
+        flex-basis: 100%;
+        width: 75%;
+        order: 3;
+	}
+	
+	.aside{
+        flex-basis: 30%;
+        width: 25%;
+        order: 2;
+    }
+
+}
+
+
+img, video, iframe, object{
+    max-width: 100%;
+}
+
+.red:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* mobile */
+[class*="kolona"]{
+    float: left;
+    padding: 10px;
+    width: 100%;
+}
+
+/* tablet*/
+@media (min-width:700px){
+    .t-kolona-1{width:8.33%;}
+    .t-kolona-2{width:16.66%;}
+    .t-kolona-3{width:25%;}
+    .t-kolona-4{width:33.33%;}
+    .t-kolona-5{width:41.66%;}
+    .t-kolona-6{width:50%;}
+    .t-kolona-7{width:58.33%;}
+    .t-kolona-8{width:66.66%;}
+    .t-kolona-9{width:75%;}
+    .t-kolona-10{width:83.33%;}
+    .t-kolona-11{width:91.66%;}
+    .t-kolona-12{width:100%;}
+}
+
+/* desktop */
+@media (min-width:1100px){
+    .d-kolona-1{width:8.33%;}
+    .d-kolona-2{width:16.66%;}
+    .d-kolona-3{width:25%;}
+    .d-kolona-4{width:33.33%;}
+    .d-kolona-5{width:41.66%;}
+    .d-kolona-6{width:50%;}
+    .d-kolona-7{width:58.33%;}
+    .d-kolona-8{width:66.66%;}
+    .d-kolona-9{width:75%;}
+    .d-kolona-10{width:83.33%;}
+    .d-kolona-11{width:91.66%;}
+    .d-kolona-12{width:100%;}
+}
+
+    
+    
+
+/*ZAGLAVLJE!*/
+
+#zaglavlje
+{
+    margin-bottom: 20px;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e3e9ee;
+    box-shadow: 0 1px 3px rga(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+#zaglavlje h1{
+    color: black;
+    margin: 0;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px slategrey;
+}
+.empty_log{
+   padding-top: 180px;
+
+}
+
+/*NAVIGACIJA!*/
+#navigacija ul{
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#navigacija li {
+ 
+    border: 1px solid transparent;
+    margin-bottom: 5px;
+    background-color: #e3e9ee;
+    text-align: left;
+    box-shadow: 0 1px 3px rga(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+#navigacija a{
+  
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 13px;
+}
+
+#navigacija li:hover{
+    
+    background-color: #c9cfd4;
+}
+
+#navigacija div{
+    text-align: left;
+}
+#user{
+  
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 13px;
+    background: #c9cfd4;
+    margin-bottom: 5px;
+}
+
+@media(max-width: 700px){
+    #navigacija li {
+        text-align: center;
+    }
+}
+@media(max-width: 700px){
+    #navigacija div {
+        text-align: center;
+    }
+}
+
+#navigacija ul li #lokacija
+{
+	background-color: #c9cfd4;
+}
+/*SECTION!!*/
+
+
+#wrapper{
+
+    margin-left: 10px;
+    width: 99%;
+    height: 100%;
+    background: #e3e9ee;
+    padding: 20px; 
+}
+.chat_wrapper{
+
+    width: 100%;
+    height: 100%;
+    margin: 10px auto;
+    background: #e3e9ee;
+    color: black;
+}
+
+#chat{
+
+    min-height: 50vh;
+    height: 50vh;
+    overflow: auto;
+    border: 1px solid #b3b3b3;
+    padding:10px;
+}
+@media(max-width: 700px){
+    #wrapper{ 
+    margin-left: 0;
+    width: 100%;
+    }
+}
+
+.textarea{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #b3b3b3;
+    outline: none;
+    padding:10px;
+    margin-top: 8px;
+    color: black;
+}
+
+
+
+
+
+/*REGISTRACIJA!!*/
+
+#registracija form{
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #e3e9ee;
+    color: #000000;
+    box-shadow: 0 1px 3px rga(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+#registracija h2{
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+#registracija label{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+#registracija input[type="text"], #registracija input[type="password"]{
+    display: block;
+    width: 90%;
+    padding-left: 1px;
+    margin: auto;
+}
+#registracija input[type="submit"],#registracija input[type="button"]{
+    display: inline-block;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    display: block;
+    margin: auto;
+    padding: 5px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+} 
+#registracija a{
+    text-decoration: none;   
+} 
+#registracija p{
+    text-align: left;
+}
+
+
+#mod{
+    padding-top: 10px;  
+    text-align: center;
+    margin-top: 10px;
+    box-shadow: 0 1px 3px rga(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+
+#mod input[type="submit"]{
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin: auto;
+    padding: 5px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    height: 40px;
+    width: 60px;
+        }
+#mod input[type="text"]{ 
+        height: 40px;
+        width: 200px;
+        }
+
+@media(max-width: 1100px){
+        #mod{ 
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+        }
+        
+    }
+
+/*BANHAMMER!!*/
+
+#banhammer{
+    padding-top: 10px;  
+    text-align: center;
+    margin-top: 10px;
+    box-shadow: 0 1px 3px rga(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+
+#banhammer input[type="submit"]{
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin: auto;
+    padding: 5px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    height: 40px;
+    width: 60px;
+        }
+#banhammer input[type="text"]{ 
+        height: 40px;
+        width: 200px;
+        }
+
+@media(max-width: 1100px){
+        #banhammer{ 
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+        }
+        
+    }
+
+#delete{
+        padding-top: 10px;  
+        text-align: center;
+        margin-top: 10px;
+        box-shadow: 0 1px 3px rga(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    }
+#delete input[type="submit"]{
+        text-align: center;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        margin: auto;
+        padding: 5px;
+        font-size: 14px;
+        color: #fff;
+        background-color: #337ab7;
+        border-color: #2e6da4;
+        height: 40px;
+        width: 150px;
+            }
+
+
+.date{
+
+    float: right;
+
+}
